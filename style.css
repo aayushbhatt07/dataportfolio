@@ -1,69 +1,110 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    text-align: center;
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77c200 3px solid;
 }
 
-nav ul {
-    list-style-type: none;
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 1em;
+    margin-left: 5px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main {
-    padding: 2em;
+.section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
 }
 
-section {
-    margin-bottom: 2em;
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.projects-grid, .experience-grid {
+    display: flex;
+    gap: 20px;
 }
 
 .project, .job {
-    margin-bottom: 1em;
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    flex: 1;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: white;
+ul {
+    list-style: none;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+ul li {
+    background: #f4f4f4;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 form label {
-    margin-top: 0.5em;
+    display: block;
+    margin: 10px 0 5px;
 }
 
 form input, form textarea {
-    margin-top: 0.2em;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
 }
 
 form button {
-    margin-top: 1em;
-    padding: 0.5em;
-    background-color: #333;
-    color: white;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
     border: none;
     cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
