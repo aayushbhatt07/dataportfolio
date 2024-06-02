@@ -7,10 +7,9 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    background: #121212;
+    color: #fff;
     line-height: 1.6;
-    padding-top: 70px; /* Ensure body content does not overlap with fixed header */
 }
 
 .container {
@@ -19,9 +18,8 @@ body {
     overflow: hidden;
 }
 
-/* Header Styles */
 header {
-    background: #333;
+    background: #000;
     color: #fff;
     padding: 10px 0;
     position: fixed;
@@ -29,28 +27,26 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    float: left;
-    margin-top: 0;
+    margin-left: 20px;
     font-size: 24px;
-}
-
-header nav {
-    float: right;
-    margin-top: 5px;
+    color: #b7950b;
 }
 
 header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline;
-    margin-left: 15px;
+    margin-right: 20px;
 }
 
 header nav ul li a {
@@ -60,16 +56,14 @@ header nav ul li a {
     font-size: 16px;
 }
 
-/* Section Styles */
 .section {
-    padding: 40px 0;
-    background: #fff;
+    padding: 100px 0;
     border-bottom: 1px solid #ccc;
 }
 
 .section h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #b7950b;
     font-size: 28px;
 }
 
@@ -78,33 +72,64 @@ header nav ul li a {
     font-size: 18px;
 }
 
-.projects-grid, .experience-grid {
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timeline-icon {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.timeline-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.projects-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.project, .job {
-    background: #f4f4f4;
+.project {
+    background: #222;
     padding: 20px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
     flex: 1;
+    min-width: 250px;
+    text-align: center;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-ul li {
-    background: #f4f4f4;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 18px;
-}
-
-/* Form Styles */
 form label {
     display: block;
     margin: 10px 0 5px;
@@ -117,39 +142,39 @@ form input, form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     font-size: 16px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
 }
 
 form button {
     padding: 10px 20px;
-    background: #333;
+    background: #b7950b;
     color: #fff;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 8px;
 }
 
-/* Footer Styles */
 footer {
-    background: #333;
+    background: #000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 16px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     header nav ul {
-        text-align: center;
-        margin: 10px 0;
+        flex-direction: column;
     }
 
     header nav ul li {
-        display: block;
         margin: 10px 0;
     }
 
-    .projects-grid, .experience-grid {
+    .projects-grid {
         flex-direction: column;
     }
 }
