@@ -178,3 +178,38 @@ footer {
         flex-direction: column;
     }
 }
+
+.section-about {
+    background-image: url('path/to/background-image.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.section-about h2 {
+    font-size: 48px;
+}
+
+.section-about p {
+    font-size: 24px;
+}
+
+.section-overview {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-overview h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.section-overview p {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.section-overview .projects-grid {
+    margin-top: 50px;
+}
