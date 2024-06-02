@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayush Bhatt Portfolio</title>
+    <title>Aayush Bhatt | Data Scientist</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Aayush Bhatt</h1>
+            <h1>Aayush Bhatt | Data Scientist</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -25,8 +23,26 @@
     <main>
         <section id="about" class="section">
             <div class="container">
-                <h2>About Me</h2>
-                <p>Hi, I'm Aayush Bhatt, a passionate Data Scientist, with expertise in AI & ML...</p>
+                <h2>Hi, I'm Aayush</h2>
+                <p>I humanize data</p>
+            </div>
+        </section>
+        <section id="work" class="section">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="timeline">
+                    <!-- Example job entry -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="path/to/company-logo.png" alt="Company Logo">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Job Title at Company</h3>
+                            <p>Description of the job role and responsibilities.</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other jobs -->
+                </div>
             </div>
         </section>
         <section id="projects" class="section">
@@ -34,50 +50,11 @@
                 <h2>Projects</h2>
                 <div class="projects-grid">
                     <div class="project">
-                        <h3>Project 1</h3>
-                        <p>Description of Project 1.</p>
+                        <img src="path/to/project-image.png" alt="Project Image">
+                        <h3>Project Title</h3>
+                        <p>Description of the project.</p>
                     </div>
-                    <div class="project">
-                        <h3>Project 2</h3>
-                        <p>Description of Project 2.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul>
-                    
-                    <li>Machine Learning</li>
-                    <li>Deep Learning</li>
-                    <li>NLP</li>
-                    <li>Azure</li>
-                    <li>Large Language Models</li>
-                    <li>Git</li>
-                    <li>AWS</li>
-                </ul>
-            </div>
-        </section>
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="experience-grid">
-                    <div class="job">
-                        <h3>Data Scientist at Mykarsol Technologies</h3>
-                        <p>Skills Learned: Data Analysis, EDA, Data Visualization, Listening Effectively, Excel, Power BI, Tableau.
-•	Developed an ensemble model combining the strengths of VGG16 and InceptionV3 architectures. Utilized the Kvasir dataset, which includes images of various gastrointestinal diseases such as polyps, ulcers, and normal tissues. On which, exceptional performance was achieved with the ensemble model, attaining an accuracy of 98%.
-•	Surpassed the performance of individual models (VGG16 and InceptionV3) and significantly outperformed other state-of-the-art methods. Demonstrated expertise in statistical techniques, live API data analysis, supervised and unsupervised machine learning, communication, teamwork, report writing and eventually contributing it for the advancements in medical image analysis.
-
-</p>
-                    </div>
-                    <div class="job">
-                        <h3>Machine Learning Developer at IEEE</h3>
-                        <p>Skills learned: Regression, Clustering Model, Report, Interpersonal Relationships, Taking Initiative, Communication, Time Management.
-•	Developed a precise CNN model for distinguishing between fire and non-fire images to effectively identify real-time fire scenes. Implemented transfer learning with a ResNet model to enhance accuracy in brain tumor detection. 
-•	Leveraged advanced deep learning techniques to improve model performance and reliability for the advancements in emergency response systems and medical diagnostics through innovative AI solutions. 
-</p>
-                    </div>
+                    <!-- Repeat for other projects -->
                 </div>
             </div>
         </section>
@@ -85,11 +62,11 @@
             <div class="container">
                 <h2>Contact</h2>
                 <form action="https://formspree.io/f/{your-form-id}" method="POST">
-                    <label for="name">Name:</label>
+                    <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
+                    <label for="email">Your Email</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
+                    <label for="message">Your Message</label>
                     <textarea id="message" name="message" required></textarea>
                     <button type="submit">Send</button>
                 </form>
