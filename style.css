@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
     line-height: 1.6;
+    padding-top: 70px; /* Ensure body content does not overlap with fixed header */
 }
 
 .container {
@@ -15,21 +19,27 @@ body {
     overflow: hidden;
 }
 
+/* Header Styles */
 header {
     background: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77c200 3px solid;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header h1 {
     float: left;
+    margin-top: 0;
+    font-size: 24px;
 }
 
 header nav {
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 header nav ul {
@@ -40,27 +50,37 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
+/* Section Styles */
 .section {
-    padding: 20px 0;
+    padding: 40px 0;
+    background: #fff;
     border-bottom: 1px solid #ccc;
 }
 
-h2 {
-    margin-bottom: 10px;
+.section h2 {
+    margin-bottom: 20px;
     color: #333;
+    font-size: 28px;
+}
+
+.section p {
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .projects-grid, .experience-grid {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -73,18 +93,22 @@ h2 {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 ul li {
     background: #f4f4f4;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
+    font-size: 18px;
 }
 
+/* Form Styles */
 form label {
     display: block;
     margin: 10px 0 5px;
+    font-size: 18px;
 }
 
 form input, form textarea {
@@ -92,6 +116,7 @@ form input, form textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    font-size: 16px;
 }
 
 form button {
@@ -100,11 +125,31 @@ form button {
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
+/* Footer Styles */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .projects-grid, .experience-grid {
+        flex-direction: column;
+    }
 }
