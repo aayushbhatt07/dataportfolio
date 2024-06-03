@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -38,11 +38,16 @@ header h1 {
     color: #b7950b;
 }
 
+header nav {
+    margin-right: 20px;
+}
+
 header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 header nav ul li {
@@ -180,7 +185,7 @@ footer {
 }
 
 .section-about {
-    background-image: url('path/to/background-image.png');
+    background-image: url('images/background-image.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -189,10 +194,12 @@ footer {
 
 .section-about h2 {
     font-size: 48px;
+    color: #fff;
 }
 
 .section-about p {
     font-size: 24px;
+    color: #ccc;
 }
 
 .section-overview {
