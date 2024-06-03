@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -38,16 +38,11 @@ header h1 {
     color: #b7950b;
 }
 
-header nav {
-    margin-right: 20px;
-}
-
 header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    align-items: center;
 }
 
 header nav ul li {
@@ -189,7 +184,7 @@ header nav ul li a {
 }
 
 .section-about {
-    background-image: url('images/images/Portfolio_background1.jpg');
+    background-image: url('images/Portfolio background1.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -198,29 +193,8 @@ header nav ul li a {
 
 .section-about h2 {
     font-size: 48px;
-    color: #fff;
 }
 
 .section-about p {
     font-size: 24px;
-    color: #ccc;
-}
-
-.section-overview {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.section-overview h2 {
-    font-size: 36px;
-    color: #fff;
-}
-
-.section-overview p {
-    font-size: 20px;
-    color: #ccc;
-}
-
-.section-overview .projects-grid {
-    margin-top: 50px;
 }
